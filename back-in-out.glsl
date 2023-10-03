@@ -7,7 +7,7 @@ float backOut(float t) {
     ? 2.0 * t
     : 1.0 - (2.0 * t - 1.0);
 
-  float g = pow(f, 3.0) - f * sin(f * PI);
+  float g = f * f * f - f * sin(f * PI);
 
   return t < 0.5
     ? 0.5 * g

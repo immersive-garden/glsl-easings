@@ -3,7 +3,7 @@
 #endif
 
 float backIn(float t) {
-  return pow(t, 3.0) - t * sin(t * PI);
+  return t * t * t - t * sin(t * PI);
 }
 
 #pragma glslify: export(backIn)
