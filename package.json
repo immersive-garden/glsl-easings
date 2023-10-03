@@ -1,22 +1,28 @@
 {
-  "name": "glsl-easings",
-  "version": "1.0.0",
+  "name": "@immersive-garden/glsl-easings",
+  "version": "1.0.1",
   "main": "linear.glsl",
   "scripts": {
     "test": "npm run make:test && cd test/visual && beefy index.js -- -t glslify",
     "make:test": "node test/visual/make.js",
     "make:page": "npm run make:test && browserify -t glslify test/visual/index.js -o bundle.js"
   },
-  "author": "Hugh Kennedy <hughskennedy@gmail.com> (http://hughsk.io/)",
+  "author": "Immersive Garden <dev@immersive-g.com> (https://immersive-g.com/)",
+  "contributors": [
+    {
+      "name" : "Léon Baudouin",
+      "email" : "leondedouin@gmail.com"
+    }
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/hughsk/glsl-easings.git"
+    "url": "git://github.com/immersive-garden/glsl-easings.git"
   },
   "bugs": {
-    "url": "https://github.com/hughsk/glsl-easings/issues"
+    "url": "https://github.com/immersive-garden/glsl-easings/issues"
   },
-  "homepage": "https://github.com/hughsk/glsl-easings",
+  "homepage": "https://github.com/immersive-garden/glsl-easings",
   "dependencies": {},
   "devDependencies": {
     "beefy": "^2.1.1",
